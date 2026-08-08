@@ -12,7 +12,7 @@ export type Product = {
   price: number
   /** Primary studio image */
   image: string
-  /** Path to the .glb model served from /public */
+  /** Path to the .glb model served from raw GitHub */
   model: string
   /** Short alt / accessible label for the model */
   modelAlt: string
@@ -37,6 +37,9 @@ export const categories = [
   'Lighting',
 ] as const
 
+const MODEL_BASE =
+  'https://raw.githubusercontent.com/Kaizen3424/3d_demo/main/public/models'
+
 export const products: Product[] = [
   {
     slug: 'cassia-velvet-sofa',
@@ -45,7 +48,7 @@ export const products: Product[] = [
     category: 'Sofas',
     price: 2480,
     image: '/products/cassia-sofa.png',
-    model: '/models/cassia-sofa.glb',
+    model: `${MODEL_BASE}/cassia-sofa.glb`,
     modelAlt: 'A three-seat sofa upholstered in deep green velvet',
     description:
       'The Cassia is built around a kiln-dried hardwood frame and wrapped in a dense cotton-blend velvet that catches the light. Feather-and-foam cushions keep their shape season after season, while slim tapered legs lift the whole piece off the floor for an airy silhouette.',
@@ -70,7 +73,7 @@ export const products: Product[] = [
     category: 'Sofas',
     price: 3150,
     image: '/products/nord-sofa.png',
-    model: '/models/nord-sofa.glb',
+    model: `${MODEL_BASE}/nord-sofa.glb`,
     modelAlt: 'A leather sofa with a solid oak frame',
     description:
       'A restrained, architectural sofa that pairs an exposed solid-oak frame with full-grain aniline leather. The leather is left largely untreated so it develops a rich patina over years of use — a piece designed to age beautifully.',
@@ -95,7 +98,7 @@ export const products: Product[] = [
     category: 'Seating',
     price: 890,
     image: '/products/wren-chair.png',
-    model: '/models/wren-chair.glb',
+    model: `${MODEL_BASE}/wren-chair.glb`,
     modelAlt: 'A curved accent lounge chair in light sheen fabric',
     description:
       'The Wren wraps a curved shell in a subtle sheen fabric that shifts tone as you move around it. Low and enveloping, it works as easily beside a fireplace as it does in a reading nook. Fine steel legs keep it visually light.',
@@ -120,7 +123,7 @@ export const products: Product[] = [
     category: 'Seating',
     price: 1240,
     image: '/products/verona-armchair.png',
-    model: '/models/verona-armchair.glb',
+    model: `${MODEL_BASE}/verona-armchair.glb`,
     modelAlt: 'An ornate armchair in purple damask with gold trim',
     description:
       'The Verona reinterprets a classic form with a plush damask weave and hand-finished carved arms. It is a statement piece — equally at home anchoring a hallway or paired at the head of a dining table.',
@@ -145,7 +148,7 @@ export const products: Product[] = [
     category: 'Lighting',
     price: 320,
     image: '/products/halden-lamp.png',
-    model: '/models/halden-lamp.glb',
+    model: `${MODEL_BASE}/halden-lamp.glb`,
     modelAlt: 'A barn-style table lamp with a brushed metal shade',
     description:
       'A quiet workhorse of a lamp. The Halden’s spun-metal dome throws a soft, directed pool of warm light — ideal on a console, a desk, or a bedside table. The finish is anisotropic brushed metal that reads differently under changing light.',
