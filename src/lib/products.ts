@@ -46,7 +46,7 @@ export const products: Product[] = [
     name: 'Cassia Velvet Sofa',
     tagline: 'A low, generous three-seater in deep velvet.',
     category: 'Sofas',
-    price: 2480,
+    price: 24800,
     image: '/products/cassia-sofa.png',
     model: `${MODEL_BASE}/cassia-sofa.glb`,
     modelAlt: 'A three-seat sofa upholstered in deep green velvet',
@@ -67,36 +67,37 @@ export const products: Product[] = [
     modelCredit: 'Model: “Glam Velvet Sofa”, Khronos glTF Sample Assets (CC BY 4.0).',
   },
   {
-    slug: 'nord-leather-sofa',
-    name: 'Nord Leather Sofa',
-    tagline: 'Mid-century lines in full-grain cognac leather.',
+    slug: 'lorenz-sofa',
+    name: 'Lorenz Sofa',
+    tagline: 'A tufted three-seater in breathable cotton.',
     category: 'Sofas',
-    price: 3150,
-    image: '/products/nord-sofa.png',
-    model: `${MODEL_BASE}/nord-sofa.glb`,
-    modelAlt: 'A leather sofa with a solid oak frame',
+    price: 25000,
+    image: '/new/lorenz_sofa/sofa.jpg',
+    model:
+      'https://raw.githubusercontent.com/Kaizen3424/3d_demo/main/public/new/lorenz_sofa/sofa.glb',
+    modelAlt: 'A three-seat fabric sofa in jade ivory cotton with a tufted backrest',
     description:
-      'A restrained, architectural sofa that pairs an exposed solid-oak frame with full-grain aniline leather. The leather is left largely untreated so it develops a rich patina over years of use — a piece designed to age beautifully.',
-    materials: 'Full-grain aniline leather, solid oak frame, high-resilience foam',
-    dimensions: { width: '204 cm', depth: '90 cm', height: '74 cm', weight: '61 kg' },
+      'The Lorenz is a testament to exquisite design and detailed craftsmanship. Its soft, breathable cotton upholstery offers a calming aura, while the tufted backrest and gracefully curved armrests add classic charm. Sink into generously padded seats and a sturdy solid-wood frame built for years of daily relaxation.',
+    materials: 'Cotton upholstery, high-density foam, solid wood frame, metal legs',
+    dimensions: { width: '208.3 cm', depth: '83.8 cm', height: '76.2 cm', weight: '55 kg' },
     finishes: [
-      { name: 'Cognac', swatch: 'oklch(0.55 0.1 55)' },
-      { name: 'Espresso', swatch: 'oklch(0.34 0.03 50)' },
-      { name: 'Sand', swatch: 'oklch(0.75 0.05 80)' },
+      { name: 'Jade Ivory', swatch: 'oklch(0.9 0.03 85)' },
+      { name: 'Sage Green', swatch: 'oklch(0.75 0.05 140)' },
+      { name: 'Sand Brown', swatch: 'oklch(0.7 0.06 55)' },
     ],
     features: [
-      'Full-grain leather that patinas over time',
-      'Exposed FSC-certified oak frame',
-      'Individually pocketed seat springs',
+      'Tufted backrest with gracefully curved armrests',
+      'Breathable cotton-blend upholstery',
+      'Sturdy solid wood frame',
     ],
-    modelCredit: 'Model: “Sheen Wood Leather Sofa”, Khronos glTF Sample Assets (CC BY 4.0).',
+    modelCredit: 'Studio 3D model — Lorenz Sofa.',
   },
   {
     slug: 'wren-accent-chair',
     name: 'Wren Accent Chair',
     tagline: 'A soft, sculptural lounge chair.',
     category: 'Seating',
-    price: 890,
+    price: 8900,
     image: '/products/wren-chair.png',
     model: `${MODEL_BASE}/wren-chair.glb`,
     modelAlt: 'A curved accent lounge chair in light sheen fabric',
@@ -121,7 +122,7 @@ export const products: Product[] = [
     name: 'Verona Armchair',
     tagline: 'An ornate armchair with a modern posture.',
     category: 'Seating',
-    price: 1240,
+    price: 12400,
     image: '/products/verona-armchair.png',
     model: `${MODEL_BASE}/verona-armchair.glb`,
     modelAlt: 'An ornate armchair in purple damask with gold trim',
@@ -146,7 +147,7 @@ export const products: Product[] = [
     name: 'Halden Table Lamp',
     tagline: 'A warm barn-style lamp in brushed metal.',
     category: 'Lighting',
-    price: 320,
+    price: 3200,
     image: '/products/halden-lamp.png',
     model: `${MODEL_BASE}/halden-lamp.glb`,
     modelAlt: 'A barn-style table lamp with a brushed metal shade',
@@ -165,6 +166,31 @@ export const products: Product[] = [
       'Braided fabric cord with inline switch',
     ],
     modelCredit: 'Model: “Anisotropy Barn Lamp”, Khronos glTF Sample Assets (CC BY 4.0).',
+  },
+  {
+    slug: 'sikaar-sofa',
+    name: 'Sikaar Sofa',
+    tagline: 'A handcrafted sculptural sofa in seasoned teak.',
+    category: 'Sofas',
+    price: 45000,
+    image: '/new/wooden_street_sofa/image.jpg',
+    model:
+      'https://raw.githubusercontent.com/Kaizen3424/3d_demo/main/public/new/wooden_street_sofa/sofa.glb',
+    modelAlt: 'A handcrafted teak wood sofa with an asymmetrical sculptural silhouette',
+    description:
+      'The Sikaar is where artistry meets functionality. Its asymmetrical form looks different from every angle, and its Mansaar-inspired geometry balances positive and negative space for a look that is both sculptural and practical. Seasoned old teak wood holds the seating together — and tops the armrests with a surface made for afternoon tea cups. Handcrafted in small batches, made in India.',
+    materials: 'Seasoned old teak wood, foam, wadding, upholstery fabric',
+    dimensions: { width: '206 cm', depth: '81 cm', height: '76 cm', weight: '65 kg' },
+    finishes: [
+      { name: 'Natural Teak', swatch: 'oklch(0.55 0.09 65)' },
+      { name: 'Herringbone Grey', swatch: 'oklch(0.6 0.02 250)' },
+    ],
+    features: [
+      'Asymmetrical, sculptural form',
+      'Handcrafted seasoned teak frame',
+      'Practical wooden armrest surface',
+    ],
+    modelCredit: 'Studio 3D model — Sikaar Sofa.',
   },
 ]
 
@@ -185,9 +211,9 @@ export function getRelated(slug: string, limit = 3): Product[] {
 }
 
 export function formatPrice(price: number): string {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
     maximumFractionDigits: 0,
   }).format(price)
 }
